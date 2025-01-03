@@ -74,7 +74,7 @@ span{
       padding: 5px;
    }
    img,.signature{
-      width: 300;
+      max-width: 300px;
    }
    div.col:hover{
       transform: scale(1.05);
@@ -90,13 +90,15 @@ span{
    }
    .col{
       width: 100%;
-      margin-bottom: 40px;
+      margin-bottom:40px;
+      margin-left:auto;
+      margin-right: auto;
    }
    .main{
-      padding: 5px;
+      padding: 10px;
    }
    img,.signature{
-      max-width: 100%;
+      max-width: 340px;
    }
    div.col:hover{
       transform: scale(1.05);
@@ -112,7 +114,9 @@ span{
    }
    .col{
       width: 100%;
-      margin-bottom: 20px;
+      margin-bottom:80px;
+      margin-left:auto;
+      margin-right: auto;
    }
    .main{
       padding: 10px;
