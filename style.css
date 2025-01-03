@@ -62,13 +62,12 @@ div.col:hover{
 span{
    color: #636e72;
 }
-@media screen and (max-width: 380px){
+@media screen and (max-width: 350px){
    .row{
       flex-direction: column;
    }
    .col{
       width: 100%;
-      margin-bottom:30px;
       
    }
    .main{
@@ -85,7 +84,7 @@ span{
       font-size: 25px;
    }
 }
-@media screen and (min-width: 380px){
+@media screen and (min-width: 350px){
    .row{
       flex-direction: column;
    }
