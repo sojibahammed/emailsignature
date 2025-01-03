@@ -1,5 +1,5 @@
 *{
-   margin: o;
+   margin: 0;
    padding: 0;
    box-sizing: border-box;
 }
@@ -15,26 +15,24 @@ body{
 }
 h1{
    color: #2d3436;
+   margin-bottom: 40px;
 }
 .row{
    display: flex;
    justify-content:space-between;
-   margin-bottom: 50px;
 }
 .col{
-   
-   /* max-width: 33.3%; */
+   width: 350px;   
    position: relative;
    transition: transform 0.5s;
    cursor: pointer;
-   
+   text-align: center;
 }
 img{
-   /* width: 100%;
-   height: auto; */
    border-radius: 2px;
    display: block;
    box-shadow: 0 0 10px rgba(0, 0, 0, 0.616);
+   margin: auto;
 
    
 }
@@ -44,6 +42,8 @@ img{
    padding: 5px;
    border-radius: 3px;
    cursor: pointer;
+   margin-left: auto;
+   margin-right: auto;
 }
 
 div.col:hover{
@@ -62,23 +62,69 @@ div.col:hover{
 span{
    color: #636e72;
 }
-@media screen and (max-width: 1240px){
+@media screen and (max-width: 380px){
    .row{
       flex-direction: column;
    }
    .col{
-      margin-bottom: 40px;
-      margin-left: auto;
-      margin-right: auto;
-      min-width: 400px
+      width: 100%;
+      
+   }
+   .main{
+      padding: 10px;
+   }
+   img,.signature{
+      width: 100%;
    }
    div.col:hover{
-      transform: scale(1.1);
-   }
-   .signature{
-      width: 350px
+      transform: scale(1.05);
    }
    h1{
       text-align: center;
+      font-size: 25px;
+   }
+}
+@media screen and (min-width: 380px){
+   .row{
+      flex-direction: column;
+   }
+   .col{
+      width: 100%;
+      margin-bottom: 20px;
+   }
+   .main{
+      padding: 10px;
+   }
+   img,.signature{
+      max-width: 350px;
+   }
+   div.col:hover{
+      transform: scale(1.05);
+   }
+   h1{
+      text-align: center;
+      font-size: 25px;
+   }
+}
+@media screen and (min-width: 1100px){
+   .row{
+      flex-direction: row;
+   }
+   .col{
+      width: 100%;
+      margin-bottom: 20px;
+   }
+   .main{
+      padding: 10px;
+   }
+   img,.signature{
+      max-width: 350px;
+   }
+   div.col:hover{
+      transform: scale(1.05);
+   }
+   h1{
+      text-align: center;
+      font-size: 25px;
    }
 }
