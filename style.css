@@ -125,7 +125,7 @@ span{
       max-width: 350px;
    }
    div.col:hover{
-      transform: scale(1.05);
+      transform: scale(1.2);
    }
    h1{
       text-align: center;
